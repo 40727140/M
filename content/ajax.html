@@ -1,0 +1,367 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSTemplate</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cmstemplate</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmstemplate</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='可攜系統.html'>可攜系統</a><ul class='dropdown'><li><a href='Lua 解譯.html'>Lua 解譯</a></li></ul><li class='has-children'><a href='Wink.html'>Wink</a><ul class='dropdown'><li><a href='Add Wink.html'>Add Wink</a></li></ul><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li><a href='建立網頁.html'>建立網頁</a><li class='has-children'><a href='基本操作.html'>基本操作</a><ul class='dropdown'><li><a href='客製化.html'>客製化</a><li><a href='編輯網頁內容.html'>編輯網頁內容</a><li><a href='上傳與引用檔案.html'>上傳與引用檔案</a><li><a href='上傳與引用圖片.html'>上傳與引用圖片</a><li><a href='嵌入程式碼.html'>嵌入程式碼</a><li><a href='嵌入影片檔.html'>嵌入影片檔</a><li><a href='檢視 STL.html'>檢視 STL</a></li></ul><li><a href='置入 disqus.html'>置入 disqus</a><li><a href='Gitlab 同步.html'>Gitlab 同步</a><li><a href='Heroku 部署.html'>Heroku 部署</a><li><a href='Fossil SCM.html'>Fossil SCM</a></li></ul><li class='has-children'><a href='注意事項.html'>注意事項</a><ul class='dropdown'><li><a href='標題選擇.html'>標題選擇</a><li><a href='靜態網頁 404.html'>靜態網頁 404</a><li><a href='動態網站錯誤.html'>動態網站錯誤</a></li></ul><li class='has-children'><a href='延伸開發.html'>延伸開發</a><ul class='dropdown'><li class='has-children'><a href='已知問題.html'>已知問題</a><ul class='dropdown'><li><a href='IPv6.html'>IPv6</a><li><a href='上傳資料引用.html'>上傳資料引用</a><li><a href='MathJax.html'>MathJax</a><li><a href='html 分頁.html'>html 分頁</a><li><a href='靜態搜尋.html'>靜態搜尋</a><li><a href='template.html'>template</a><li><a href='重複標題頁面.html'>重複標題頁面</a></li></ul><li><a href='ajax.html'>ajax</a><li><a href='black.html'>black</a><li><a href='summernote.html'>summernote</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">重複標題頁面 << <a href='重複標題頁面.html'>Previous</a> <a href='black.html'>Next</a> >> black<br /><h1>ajax</h1>
+<p>共計有四個地方必須修改: <a href="https://mde.tw/lab/blog/2021-kmol-cmsimde-ajax-editor-save.html">https://mde.tw/lab/blog/2021-kmol-cmsimde-ajax-editor-save.html</a></p>
+<p>第一就是 sh4tinymce 長久以來的 bug. 可以透過 tinymce.activeEditor.setDirty(true); 知會 editor, 在 onSubmitFunction 將 highlighter 引用的程式碼插入 editor 時, 讓表單中的 Save 可以點擊.</p>
+<p>另外兩項更動, 則是將 savePage 與 ssavePage 中移除跳行的程式碼, 予以註解.</p>
+<p>最後一項修改則是 tinymce_editor() 函式:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def tinymce_editor(menu_input=None, editor_content=None, page_order=None):
+    
+    """Tinymce editor scripts
+    """
+    
+    sitecontent =file_get_contents(config_dir + "content.htm")
+    editor = set_admin_css() + editorhead() + '''&lt;/head&gt;''' + editorfoot()
+    # edit all pages
+    if page_order is None:
+        outstring = editor + "&lt;div class='container'&gt;&lt;nav&gt;" + \
+                        menu_input + "&lt;/nav&gt;&lt;section&gt;&lt;form onsubmit='return save_all_data(this)'&gt; \
+                        &lt;textarea class='simply-editor' name='page_content' cols='50' rows='15'&gt;" +  \
+                        editor_content + "&lt;/textarea&gt;&lt;input type='button' onClick='save_all()' value='save'&gt;"
+        outstring +="""
+        &lt;script&gt;
+        // leave  warning when modification not saved
+        window.addEventListener('beforeunload', function(e) {
+        var myPageIsDirty = tinymce.activeEditor.isDirty()
+        if(myPageIsDirty) {
+            //following two lines will cause the browser to ask the user if they
+            //want to leave. The text of this dialog is controlled by the browser.
+            e.preventDefault(); //per the standard
+            e.returnValue = ''; //required for Chrome
+        }
+        //else: user is allowed to leave without a warning dialog
+        });
+        
+        function tempAlert(msg,duration)
+            {
+             var el = document.createElement("div");
+             el.setAttribute("style","position:absolute;top:40%;left:20%;background-color:lightgreen;");
+             el.innerHTML = msg;
+             setTimeout(function(){
+              el.parentNode.removeChild(el);
+             },duration);
+             document.body.appendChild(el);
+            }
+        
+        function save_all(){
+            tinymce.activeEditor.execCommand('mceSave');
+        }
+        
+        function save_all_data(form) {
+                var page_content = $('textarea#page_content').val();
+                
+                $.ajax({
+                    type: "POST",
+                    url: "/savePage",
+                    data: {"page_content": page_content},
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        alert(XMLHttpRequest.status);
+                        alert(XMLHttpRequest.readyState);
+                        alert(textStatus);
+                    },
+                    success: function() {
+                        //document.getElementById("notice").innerHTML = "saved!";
+                        parser = new DOMParser();
+                        parsed = parser.parseFromString(page_content, 'text/html');
+                        paragraphs = parsed.querySelectorAll('h1, h2, h3');
+                        //alert(paragraphs.length)
+                        //tempAlert("saved!", 700);
+
+                        if (paragraphs.length &gt; 1 || paragraphs.length == 0)
+                        {
+                            // when no title page will cause reload to error page
+                            //window.location.reload();
+                            document.location.href="/";
+                        }
+                        else
+                        {
+                            tempAlert("saved!", 700);
+                        }
+                    }
+                 }); 
+        }
+        &lt;/script&gt;
+        """
+        outstring += "&lt;/form&gt;&lt;/section&gt;&lt;/body&gt;&lt;/html&gt;"
+    else:
+        # add viewpage button while single page editing
+        head, level, page = parse_content()
+        outstring = "&lt;p id='notice'&gt;&lt;/p&gt;"
+        outstring  += editor + "&lt;div class='container'&gt;&lt;nav&gt;" + \
+                        menu_input+"&lt;/nav&gt;&lt;section&gt;&lt;form onsubmit='return save_data(this)'&gt; \
+                        &lt;textarea class='simply-editor' id='page_content' name='page_content' cols='50' rows='15'&gt;" + \
+                        editor_content + "&lt;/textarea&gt;&lt;input type='hidden'  id='page_order' name='page_order' value='" + \
+                        str(page_order) + "'&gt;"
+        # add an extra collaborative save button
+        outstring += """&lt;input type="button" onClick="ssave()"  value="save"&gt;"""
+        outstring += """&lt;input type="button" onClick="cssave()"  value="csave"&gt;"""
+
+        outstring +="""
+        &lt;script&gt;
+        // leave  warning when modification not saved
+        window.addEventListener('beforeunload', function(e) {
+        var myPageIsDirty = tinymce.activeEditor.isDirty()
+        if(myPageIsDirty) {
+            //following two lines will cause the browser to ask the user if they
+            //want to leave. The text of this dialog is controlled by the browser.
+            e.preventDefault(); //per the standard
+            e.returnValue = ''; //required for Chrome
+        }
+        //else: user is allowed to leave without a warning dialog
+        });
+        
+        function tempAlert(msg,duration)
+            {
+             var el = document.createElement("div");
+             el.setAttribute("style","position:absolute;top:40%;left:20%;background-color:lightgreen;");
+             el.innerHTML = msg;
+             setTimeout(function(){
+              el.parentNode.removeChild(el);
+             },duration);
+             document.body.appendChild(el);
+            }
+            
+        // default action is "save"
+        var action ="save";
+        
+        function cssave(){
+            action = "csave";
+            tinymce.activeEditor.execCommand('mceSave');
+        }
+        
+        function ssave(){
+            action = "save";
+            tinymce.activeEditor.execCommand('mceSave');
+        }
+        
+        function save_data(form) {
+                var page_content = $('textarea#page_content').val();
+                var page_order = $('#page_order').val();
+                
+                $.ajax({
+                    type: "POST",
+                    url: "/ssavePage",
+                    data: {"page_content": page_content, "page_order": page_order, "action": action},
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        alert(XMLHttpRequest.status);
+                        alert(XMLHttpRequest.readyState);
+                        alert(textStatus);
+                    },
+                    success: function() {
+                        //document.getElementById("notice").innerHTML = "saved!";
+                        parser = new DOMParser();
+                        parsed = parser.parseFromString(page_content, 'text/html');
+                        paragraphs = parsed.querySelectorAll('h1, h2, h3');
+                        //alert(paragraphs.length)
+                        //tempAlert("saved!", 700);
+
+                        if (paragraphs.length &gt; 1 || paragraphs.length == 0 )
+                        {
+                            //window.location.reload();
+                            document.location.href="/";
+                        }
+                        else
+                        {
+                            tempAlert("saved!", 700);
+                        }
+                    }
+                 }); 
+        }
+        &lt;/script&gt;
+        """
+        outstring += '''&lt;input type=button onClick="location.href='/get_page/''' + \
+                    head[page_order] + \
+                    ''''" value='viewpage'&gt;&lt;/form&gt;&lt;/section&gt;&lt;/body&gt;&lt;/html&gt;'''
+    return outstring
+    
+</pre>
+<p></p><br />重複標題頁面 << <a href='重複標題頁面.html'>Previous</a> <a href='black.html'>Next</a> >> black</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

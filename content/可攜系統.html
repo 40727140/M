@@ -1,0 +1,231 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSTemplate</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cmstemplate</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmstemplate</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='可攜系統.html'>可攜系統</a><ul class='dropdown'><li><a href='Lua 解譯.html'>Lua 解譯</a></li></ul><li class='has-children'><a href='Wink.html'>Wink</a><ul class='dropdown'><li><a href='Add Wink.html'>Add Wink</a></li></ul><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li><a href='建立網頁.html'>建立網頁</a><li class='has-children'><a href='基本操作.html'>基本操作</a><ul class='dropdown'><li><a href='客製化.html'>客製化</a><li><a href='編輯網頁內容.html'>編輯網頁內容</a><li><a href='上傳與引用檔案.html'>上傳與引用檔案</a><li><a href='上傳與引用圖片.html'>上傳與引用圖片</a><li><a href='嵌入程式碼.html'>嵌入程式碼</a><li><a href='嵌入影片檔.html'>嵌入影片檔</a><li><a href='檢視 STL.html'>檢視 STL</a></li></ul><li><a href='置入 disqus.html'>置入 disqus</a><li><a href='Gitlab 同步.html'>Gitlab 同步</a><li><a href='Heroku 部署.html'>Heroku 部署</a><li><a href='Fossil SCM.html'>Fossil SCM</a></li></ul><li class='has-children'><a href='注意事項.html'>注意事項</a><ul class='dropdown'><li><a href='標題選擇.html'>標題選擇</a><li><a href='靜態網頁 404.html'>靜態網頁 404</a><li><a href='動態網站錯誤.html'>動態網站錯誤</a></li></ul><li class='has-children'><a href='延伸開發.html'>延伸開發</a><ul class='dropdown'><li class='has-children'><a href='已知問題.html'>已知問題</a><ul class='dropdown'><li><a href='IPv6.html'>IPv6</a><li><a href='上傳資料引用.html'>上傳資料引用</a><li><a href='MathJax.html'>MathJax</a><li><a href='html 分頁.html'>html 分頁</a><li><a href='靜態搜尋.html'>靜態搜尋</a><li><a href='template.html'>template</a><li><a href='重複標題頁面.html'>重複標題頁面</a></li></ul><li><a href='ajax.html'>ajax</a><li><a href='black.html'>black</a><li><a href='summernote.html'>summernote</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='Lua 解譯.html'>Next</a> >> Lua 解譯<br /><h1>可攜系統</h1>
+<p><a href="https://drive.google.com/file/d/1hTvN4mCk2b_enIK204HA0AVPsd3GPlh5/view?usp=sharing">portablekmol_base.7z</a> (下載 118MB, 解開壓縮後 148MB)</p>
+<p style="padding-left: 30px;">包括 data 目錄與 start_ipv6.bat, start_ipv4.bat, stop.bat</p>
+<p style="padding-left: 30px;">功能: 啟動後可以啟動 SciTE 編輯器, 可用於類解譯 ANSI C 程式, 以及 <a href="https://solvespace.com">Solvespace</a>.</p>
+<p><a href="https://drive.google.com/file/d/1BGfN5R6Yw1e9Unm4u8GCRP4xcSuYfCSE/view?usp=sharing">Python395.7z</a> (下載 123MB, 解開壓縮後 495MB)</p>
+<p style="padding-left: 30px;">功能: 與 <a href="https://drive.google.com/file/d/1hTvN4mCk2b_enIK204HA0AVPsd3GPlh5/view?usp=sharing">portablekmol_base.7z</a> 結合後, 可以利用 SciTE 編輯器執行 Python 程式.</p>
+<p><a href="https://drive.google.com/file/d/1RW51wCJ056TdWvjharBKOl6FM9iewpHI/view?usp=sharing">portablegit_2.31.1.7z</a> (下載 60MB, 解開壓縮後 286MB)</p>
+<p style="padding-left: 30px;">功能: 與 <a href="https://drive.google.com/file/d/1hTvN4mCk2b_enIK204HA0AVPsd3GPlh5/view?usp=sharing">portablekmol_base.7z</a> 結合後, 可以利用可攜程式系統的命令列視窗執行 git 指令.</p>
+<p><a href="https://drive.google.com/file/d/1JDmc_b4BLwGh4hQ7Tatq02EXmiPLrNZV/view?usp=sharing">lua-5.4.3.7z</a> (下載 662KB, 解開壓縮後 4MB)</p>
+<p style="padding-left: 30px;">功能: 與 <a href="https://drive.google.com/file/d/1hTvN4mCk2b_enIK204HA0AVPsd3GPlh5/view?usp=sharing">portablekmol_base.7z</a> 結合後, 可以利用 SciTE 編輯器執行 Lua 程式.</p>
+<p><a href="https://drive.google.com/file/d/1u-Efwoizvqn9WJdcL0fez7a2d0ulGBcs/view?usp=sharing">PUTTY.7z</a> (下載 940KB, 解開壓縮後 4MB)</p>
+<p style="padding-left: 30px;">功能: plink.exe 可以與 git 結合, 利用 Putty.exe 中所設定的 session 名稱進行 SSH 連線.</p>
+<p><a href="https://drive.google.com/file/d/1m6cmWu9AZhkBj6wFn9IiJlShcpGbz05g/view?usp=sharing">msys64_20210419.7z</a> (下載 3.5GB, 解開壓縮後 12GB)</p>
+<p style="padding-left: 30px;">功能: <a href="https://www.msys2.org/">Msys2</a> 安裝</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">pacman -S mingw-w64-x86_64-toolchain
+pacman -Sy mingw-w64-x86_64-qt5
+pacman -Sy mingw-w64-x86_64-qt5-static
+pacman -Sy mingw-w64-x86_64-ffmpeg
+pacman -Sy mingw-w64-x86-64-cmake</pre>
+<p><a href="https://drive.google.com/file/d/1-dVWTsgCdCIChE5mo2DeVoZokdvOXxt2/view?usp=sharing">cmake-3.21.0-windows-x86_64.7z</a> (下載 16MB, 解開壓縮後 89MB)</p>
+<p><a href="https://drive.google.com/file/d/17M7Ro9NO2mmycvwOuK-10yYgs2oxFwEB/view?usp=sharing">msys64_20210419_clean.7z</a> (下載 87MB , 解開壓縮後 374MB)</p>
+<p style="padding-left: 30px;">功能: 尚未安裝任何 Package 的 <a href="https://www.msys2.org/">Msys2</a> 系統.</p>
+<p><a href="https://drive.google.com/file/d/1X8icOyPgABAkKHYaDLXPSoy7U7nyxqzW/view?usp=sharing">Flutter_portable_20210707.7z</a> (下載 4.7 GB, 解開壓縮後約 20GB)</p>
+<p style="padding-left: 30px;">可攜系統中的 Android sdk 容量約 7.5 GB, Flutter 與 Dart 容量約 1.6 GB, Java jdk 容量約 200MB. vscode 約 530 MB, home_mdecourse 目錄下含手機 emulator 檔案容量約 9.3 GB.</p>
+<p><a href="https://drive.google.com/file/d/1MmLHqk2i3Ei2Bf3EoNOjaLVO6RHqJtb4/view?usp=sharing">node-v14.17.2-x64.7z</a> (下載 17MB, 解開壓縮後 78MB)</p>
+<p><a href="https://drive.google.com/file/d/1SDLtjyddvFs9OHobMu7Ddx6Doa15RVMY/view?usp=sharing">rust_1.53.0_portable_for_msys2.7z</a> (下載 147MB , 解開壓縮後 1.13GB)</p>
+<p><a href="https://drive.google.com/file/d/1CZfEjvHtQSlAch83jHmw4Ivz6WubPu8h/view?usp=sharing">Erlang 10.7 and Elixir portable.7z</a> for Windows (下載 62MB , 解開壓縮後 340MB)</p>
+<p>Deno 1.11.5: <a href="https://github.com/denoland/deno/releases/">https://github.com/denoland/deno/releases/</a> 直接下載 Windows 版本解開壓縮後 55MB, 放入可攜系統 data 目錄中即可執行.</p>
+<p><a href="https://drive.google.com/file/d/1a9onsFJavy_eXDyzpLJIIVTxEhgAdRYV/view?usp=sharing">CoppeliaSimEdu 4.0.0.7z</a> for Windows 64 位元操作系統(下載 134MB, 解開壓縮後 337MB)</p>
+<p><a href="https://drive.google.com/file/d/1nF63ZLxueDlRjWdzXxTg13Pc5MjeCecs/view?usp=sharing">CoppeliaSimEdu 4.0.0.zip</a> for Mac, 解開壓縮後必須將 coppeliaSim.app 目錄改名為 coppeliaSim 後進入執行sudo xattr -r -d com.apple.quarantine *, 以便解除 Mac 對非 App Store 下載套件所設定的隔離屬性. 然後以 /Users/account/copsim4/coppeliaSim/Contents/MacOS/coppeliaSim 啟動 Coppeliasim.</p>
+<p><a href="https://drive.google.com/file/d/1iXtPtMOxH6-k7UiYrOS9BYRU4muJi_KM/view?usp=sharing">CoppeliaSimEdu 4.0.0.tar.xz</a> for Ubuntu</p>
+<p style="padding-left: 30px;">功能: 可免費提供大學機電資整合課程使用, 且開放原始碼, 可用於機電資控制系統設計與模擬 (InfoMechaTronic control system design and simulation).</p>
+<p><a href="https://drive.google.com/file/d/1ih24k0G-vKnB1OjOIxHV4Gyz-bmlxeCU/view?usp=sharing">robodk_522.7z</a> (下載 364MB, 解開壓縮後 1GB)</p>
+<p style="padding-left: 30px;">功能: 提供限縮功能版本 Free Trial, 只可模擬但無法存檔, 可用於工業級機械手臂在線與離線控制系統設計與模擬.</p>
+<p><a href="https://drive.google.com/file/d/1uDJCaxDsed_5ZTdsHNOfGQ51JnT3aNP0/view?usp=sharing">Range3.7z</a> (下載 27MB, 解開壓縮後 109MB)</p>
+<p style="padding-left: 30px;">功能: 開放源 FEM (Finite Element Method) 分析套件.</p>
+<p><a href="https://drive.google.com/file/d/1ITHNrhemifHloS_x3BAchyQxMUKma0AI/view?usp=sharing">webots-R2021a.7z</a> (下載 1.5GB, 解開壓所後 2.9GB)</p>
+<p style="padding-left: 30px;">功能: 採 Apache 2.0 使用授權的開放源套件, 可用於機電資控制系統設計與模擬.</p>
+<p><a href="https://drive.google.com/file/d/1iJigBy2F_nKuq6u2RW5wYXf-pRqDAJLZ/view?usp=sharing">xsltproc.7z</a> - get from <a href="https://github.com/CoppeliaRobotics/xsltproc-win">https://github.com/CoppeliaRobotics/xsltproc-win</a> </p>
+<p><a href="https://drive.google.com/file/d/1hRAsUWiR5UzWUVqRb8P829UUTQXVbLgd/view?usp=sharing">GitExtensions_3.5.1.7z</a> from <a href="https://github.com/gitextensions/gitextensions">https://github.com/gitextensions/gitextensions</a></p><br />About << <a href='About.html'>Previous</a> <a href='Lua 解譯.html'>Next</a> >> Lua 解譯</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
